@@ -34,9 +34,9 @@ If it's not there, add it, and then restart Tor.
 
 # Unlocking Instagram: The Game-Changing Features of Our Brute Force Tool
 
-What truly sets this Instagram brute force script apart from others, readily available on GitHub, is its meticulous attention to both security and evasion techniques. While some scripts might merely initiate the Tor service and proceed with the attack, this script takes a much more comprehensive approach. It seamlessly integrates Tor proxies into its network requests to ensure anonymity and dynamic IP address rotation during the brute force operation.
+What truly sets this Instagram brute force tool apart from others, readily available on GitHub, is its meticulous attention to both security and evasion techniques. While some tools might merely initiate the Tor service and proceed with the attack, this tool takes a much more comprehensive approach. It seamlessly integrates Tor proxies into its network requests to ensure anonymity and dynamic IP address rotation during the brute force operation.
 
-The script achieves this by configuring Tor proxies as follows:
+The tool achieves this by configuring Tor proxies as follows:
 
 ```
 self.proxies = {
@@ -45,15 +45,15 @@ self.proxies = {
 }
 ```
 
-By doing so, all communication between the script and the Instagram server is meticulously routed through the Tor network, providing a constantly changing public IP address. Without this integration, even if the Tor service is running (as initiated with the 'sudo service tor start' command), making requests without these proxies, as shown below:
+By doing so, all communication between the tool and the Instagram server is meticulously routed through the Tor network, providing a constantly changing public IP address. Without this integration, even if the Tor service is running (as initiated with the 'sudo service tor start' command), making requests without these proxies, as shown below:
 
 ```
 data = json.loads(requests.get('https://www.instagram.com/data/shared_data/', headers=headers).text)
 ```
 
-would result in a static public IP address. Consequently, with just a few unsuccessful attempts, the script would risk being blocked, limiting brute force attempts to a mere three.
+would result in a static public IP address. Consequently, with just a few unsuccessful attempts, the tool would risk being blocked, limiting brute force attempts to a mere three.
 
-Additionally, this script boasts an 'encrypt_password' function, capable of encrypting passwords before they are sent to the server. As an essential security measure, this function accepts parameters such as 'key_id', 'pub_key', 'password', and 'version'. It's vital to note that sending unencrypted passwords to the server would not proceed with the credential verification process. To acquire the necessary parameters for 'encrypt_password', the script sources them from 'https://www.instagram.com/data/shared_data/'.
+Additionally, this tool boasts an 'encrypt_password' function, capable of encrypting passwords before they are sent to the server. As an essential security measure, this function accepts parameters such as 'key_id', 'pub_key', 'password', and 'version'. It's vital to note that sending unencrypted passwords to the server would not proceed with the credential verification process. To acquire the necessary parameters for 'encrypt_password', the tool sources them from 'https://www.instagram.com/data/shared_data/'.
 
 ```
 def encrypt_password(self, key_id, pub_key, password, version=10):
@@ -79,9 +79,9 @@ def encrypt_password(self, key_id, pub_key, password, version=10):
 
             return quote_plus(f'#PWD_INSTAGRAM_BROWSER:{version}:{time}:{encrypted}')
 ```
-Furthermore, the script modifies certain attributes in the headers of the login page, 'https://www.instagram.com/accounts/login/ajax/'. For each request, it generates a unique 'user_agent' and extracts the CSRF token from 'https://www.instagram.com/data/shared_data/'. Additionally, it introduces new attributes like 'X-Asbd-Id,' among others.
+Furthermore, the tool modifies certain attributes in the headers of the login page, 'https://www.instagram.com/accounts/login/ajax/'. For each request, it generates a unique 'user_agent' and extracts the CSRF token from 'https://www.instagram.com/data/shared_data/'. Additionally, it introduces new attributes like 'X-Asbd-Id,' among others.
 
-While the script encounters occasional challenges, particularly due to captchas, it persists in its quest for successful brute force attempts. Future developments will focus on devising methods to bypass captchas. Thank you for your time.
+While the tool encounters occasional challenges, particularly due to captchas, it persists in its quest for successful brute force attempts. Future developments will focus on devising methods to bypass captchas. Thank you for your time.
 
 ![image](https://github.com/torino64/Insta_bruteforce/assets/47543092/c73a2728-5970-41ee-88ff-e81f35d99687)
 
