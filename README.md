@@ -22,9 +22,9 @@ pip install -r requirements.txt
 sudo service tor start
 sudo service tor status
 ctrl +c
-sudo python3 foxyinsta_bruteforce.py
+sudo python3 foxynsta_bruteforce.py
 ```
-If you encounter an issue when trying to run 'insta_bruteforce,' it's essential to verify your Tor configuration. Ensure that Tor has been correctly set up with the control port enabled. You can inspect the Tor configuration file, usually found at /etc/tor/torrc, and confirm that it includes the following line:
+If you encounter an issue when trying to run 'foxynsta_bruteforce,' it's essential to verify your Tor configuration. Ensure that Tor has been correctly set up with the control port enabled. You can inspect the Tor configuration file, usually found at /etc/tor/torrc, and confirm that it includes the following line:
 
 ```
 ControlPort 9051
