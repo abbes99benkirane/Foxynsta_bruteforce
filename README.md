@@ -94,5 +94,10 @@ As depicted in the image above, you'll notice that the IP address undergoes freq
 
 The extensive text you see typically indicates a captcha-related challenge. On the other hand, other messages pertain to the waiting period during the verification process. If you come across 'authenticated: false,' it suggests an unsuccessful password attempt.
 
+# 📢 Warning
+**This tool is exclusively intended for educational purposes. We want to emphasize that if you employ this tool for any other objectives beyond education, we disclaim any responsibility for such actions. The Phone Number Information tool cannot be held accountable for misuse or any illegal activities. We strongly advise that you restrict its usage to penetration testing or educational endeavors. Remember, hacking itself is not a criminal act. We welcome pull requests with open arms, fostering a collaborative environment.**
+
+# I'm Not A Hacker I'm A Cyber Security Professional
+
 
 
