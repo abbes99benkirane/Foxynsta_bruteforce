@@ -1,0 +1,6 @@
+requests==2.31.0
+fake_useragent==1.2.1
+stem==1.8.1
+pycryptodomex==3.11.0
+PyNacl==1.5.0
+
