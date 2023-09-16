@@ -1,8 +1,8 @@
-# Insta_bruteforce
+# Foxynsta_bruteforce
 
 ![image](https://github.com/torino64/Insta_bruteforce/assets/47543092/70e9563f-c927-4bca-956f-4738a5956773)
 
-Instagrame_bruteforce is a professionally crafted Python script tailored for evaluating the password strength of Instagram accounts, employing a robust bruteforce attack approach. This script is platform-agnostic and seamlessly compatible with Kali Linux/Ubuntu/Parrot OS operating systems, ensuring flexibility for users across different computing environments. To enhance anonymity and security, Instagrame_bruteforce integrates Tor service, routing its network requests through the Tor network for added privacy and protection.
+foxynsta_bruteforce is a professionally crafted Python script tailored for evaluating the password strength of Instagram accounts, employing a robust bruteforce attack approach. This tool is platform-agnostic and seamlessly compatible with Kali Linux/Ubuntu/Parrot OS operating systems, ensuring flexibility for users across different computing environments. To enhance anonymity and security, Instagrame_bruteforce integrates Tor service, routing its network requests through the Tor network for added privacy and protection.
 
 # Installation
 # Kali Linux/Ubuntu/Parrot OS:
