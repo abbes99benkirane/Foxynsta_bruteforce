@@ -14,7 +14,7 @@ sudo apt-get install tor
 sudo apt install python3
 sudo apt-get install pip
 pip install --upgrade pip setuptools
-git clone https://github.com/torino64/Insta_bruteforce.git
+git clone https://github.com/torino64/Foxynsta_bruteforce.git
 ls
 cd Insta_bruteforce
 ls
