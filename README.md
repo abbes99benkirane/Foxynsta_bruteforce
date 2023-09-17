@@ -16,7 +16,7 @@ sudo apt-get install pip
 pip install --upgrade pip setuptools
 git clone https://github.com/torino64/Foxynsta_bruteforce.git
 ls
-cd Insta_bruteforce
+cd Foxynsta_bruteforce
 ls
 pip install -r requirements.txt
 sudo service tor start
